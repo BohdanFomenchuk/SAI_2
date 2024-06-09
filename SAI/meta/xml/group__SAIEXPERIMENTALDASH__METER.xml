@@ -1,0 +1,988 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="group__SAIEXPERIMENTALDASH__METER" kind="group">
+    <compoundname>SAIEXPERIMENTALDASH_METER</compoundname>
+    <title>SAI - Experimental: DASH meter specific API definitions</title>
+    <innerclass refid="struct__sai__dash__meter__api__t" prot="public">_sai_dash_meter_api_t</innerclass>
+      <sectiondef kind="enum">
+      <memberdef kind="enum" id="group__SAIEXPERIMENTALDASH__METER_1ga7b6ea3eeb45e8c2fac4784f66aa5d9c4" prot="public" static="no" strong="no">
+        <type></type>
+        <name>_sai_meter_bucket_attr_t</name>
+        <enumvalue id="group__SAIEXPERIMENTALDASH__METER_1gga7b6ea3eeb45e8c2fac4784f66aa5d9c4a000987f1439fa0119861c3118db37c02" prot="public">
+          <name>SAI_METER_BUCKET_ATTR_START</name>
+          <briefdescription>
+<para>Start of attributes. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIEXPERIMENTALDASH__METER_1gga7b6ea3eeb45e8c2fac4784f66aa5d9c4ac4d078d2eaaff46d8f0131db89c7dec5" prot="public">
+          <name>SAI_METER_BUCKET_ATTR_ENI_ID</name>
+          <initializer>= SAI_METER_BUCKET_ATTR_START</initializer>
+          <briefdescription>
+<para>Exact matched key eni_id. </para>
+          </briefdescription>
+          <detaileddescription>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            sai_object_id_t </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           MANDATORY_ON_CREATE | CREATE_ONLY </para>
+</simplesect>
+<simplesect kind="par"><title>Allowed object types</title><para> @@objects         SAI_OBJECT_TYPE_ENI </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIEXPERIMENTALDASH__METER_1gga7b6ea3eeb45e8c2fac4784f66aa5d9c4a2d5134b4d8fab49340738cc289826d3c" prot="public">
+          <name>SAI_METER_BUCKET_ATTR_METER_CLASS</name>
+          <briefdescription>
+<para>Exact matched key meter_class. </para>
+          </briefdescription>
+          <detaileddescription>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            sai_uint32_t </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           MANDATORY_ON_CREATE | CREATE_ONLY </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIEXPERIMENTALDASH__METER_1gga7b6ea3eeb45e8c2fac4784f66aa5d9c4ab8eb7144294e06a0cf3c3ad9aa1b1aed" prot="public">
+          <name>SAI_METER_BUCKET_ATTR_END</name>
+          <briefdescription>
+<para>End of attributes. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIEXPERIMENTALDASH__METER_1gga7b6ea3eeb45e8c2fac4784f66aa5d9c4a7fcd2e5ab079aa4389d0177835bf51a3" prot="public">
+          <name>SAI_METER_BUCKET_ATTR_CUSTOM_RANGE_START</name>
+          <initializer>= 0x10000000</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Custom range base value </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIEXPERIMENTALDASH__METER_1gga7b6ea3eeb45e8c2fac4784f66aa5d9c4a5beeb16365eecb6268ce1b75130cc94e" prot="public">
+          <name>SAI_METER_BUCKET_ATTR_CUSTOM_RANGE_END</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>End of custom range base </para>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>Attribute ID for dash_meter_meter_bucket. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/bohdan/SAI_bootcamp/SAI/experimental/saiexperimentaldashmeter.h" line="41" column="1" bodyfile="/home/bohdan/SAI_bootcamp/SAI/experimental/saiexperimentaldashmeter.h" bodystart="42" bodyend="76"/>
+      </memberdef>
+      <memberdef kind="enum" id="group__SAIEXPERIMENTALDASH__METER_1ga11097d2017d1939adb96971e3693a98e" prot="public" static="no" strong="no">
+        <type></type>
+        <name>_sai_meter_bucket_stat_t</name>
+        <enumvalue id="group__SAIEXPERIMENTALDASH__METER_1gga11097d2017d1939adb96971e3693a98eab80c053014e5998a0037fccd82bd735e" prot="public">
+          <name>SAI_METER_BUCKET_STAT_OUTBOUND_BYTES</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>DASH METER_BUCKET OUTBOUND_BYTES stat count </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIEXPERIMENTALDASH__METER_1gga11097d2017d1939adb96971e3693a98ea9dc76ed5564100b57f43c0383234034a" prot="public">
+          <name>SAI_METER_BUCKET_STAT_INBOUND_BYTES</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>DASH METER_BUCKET INBOUND_BYTES stat count </para>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>Counter IDs for meter_bucket in sai_get_meter_bucket_stats() call. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/bohdan/SAI_bootcamp/SAI/experimental/saiexperimentaldashmeter.h" line="81" column="1" bodyfile="/home/bohdan/SAI_bootcamp/SAI/experimental/saiexperimentaldashmeter.h" bodystart="82" bodyend="89"/>
+      </memberdef>
+      <memberdef kind="enum" id="group__SAIEXPERIMENTALDASH__METER_1gafe68c7fca7a6b05ef3e2127404df0c56" prot="public" static="no" strong="no">
+        <type></type>
+        <name>_sai_meter_policy_attr_t</name>
+        <enumvalue id="group__SAIEXPERIMENTALDASH__METER_1ggafe68c7fca7a6b05ef3e2127404df0c56af69a230fa4a9b36ae607830390cb4d92" prot="public">
+          <name>SAI_METER_POLICY_ATTR_START</name>
+          <briefdescription>
+<para>Start of attributes. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIEXPERIMENTALDASH__METER_1ggafe68c7fca7a6b05ef3e2127404df0c56afa6c039fff6eaeea44837d20e4a754fc" prot="public">
+          <name>SAI_METER_POLICY_ATTR_IP_ADDR_FAMILY</name>
+          <initializer>= SAI_METER_POLICY_ATTR_START</initializer>
+          <briefdescription>
+<para>Action check_ip_addr_family parameter IP_ADDR_FAMILY. </para>
+          </briefdescription>
+          <detaileddescription>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            sai_ip_addr_family_t </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           CREATE_AND_SET </para>
+</simplesect>
+<simplesect kind="par"><title>Default value:</title><para> @@default         SAI_IP_ADDR_FAMILY_IPV4 </para>
+</simplesect>
+<simplesect kind="par"><title>IsResourceType:</title><para> @@isresourcetype  true </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIEXPERIMENTALDASH__METER_1ggafe68c7fca7a6b05ef3e2127404df0c56acbd2a05ed94b4f80526bb28c6bf2d819" prot="public">
+          <name>SAI_METER_POLICY_ATTR_END</name>
+          <briefdescription>
+<para>End of attributes. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIEXPERIMENTALDASH__METER_1ggafe68c7fca7a6b05ef3e2127404df0c56a7759d7ee207315fb25f236ee30aa2ac3" prot="public">
+          <name>SAI_METER_POLICY_ATTR_CUSTOM_RANGE_START</name>
+          <initializer>= 0x10000000</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Custom range base value </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIEXPERIMENTALDASH__METER_1ggafe68c7fca7a6b05ef3e2127404df0c56a7cc7bb87341bf0e8063c96d1cbd4254e" prot="public">
+          <name>SAI_METER_POLICY_ATTR_CUSTOM_RANGE_END</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>End of custom range base </para>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>Attribute ID for dash_meter_meter_policy. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/bohdan/SAI_bootcamp/SAI/experimental/saiexperimentaldashmeter.h" line="94" column="1" bodyfile="/home/bohdan/SAI_bootcamp/SAI/experimental/saiexperimentaldashmeter.h" bodystart="95" bodyend="122"/>
+      </memberdef>
+      <memberdef kind="enum" id="group__SAIEXPERIMENTALDASH__METER_1gaa2952ae08959da4095727897d8f98281" prot="public" static="no" strong="no">
+        <type></type>
+        <name>_sai_meter_rule_attr_t</name>
+        <enumvalue id="group__SAIEXPERIMENTALDASH__METER_1ggaa2952ae08959da4095727897d8f98281aee6f9af89d5fe82623df36cb31272598" prot="public">
+          <name>SAI_METER_RULE_ATTR_START</name>
+          <briefdescription>
+<para>Start of attributes. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIEXPERIMENTALDASH__METER_1ggaa2952ae08959da4095727897d8f98281a8757fa495a875b565545f45c5aaaff26" prot="public">
+          <name>SAI_METER_RULE_ATTR_METER_POLICY_ID</name>
+          <initializer>= SAI_METER_RULE_ATTR_START</initializer>
+          <briefdescription>
+<para>Exact matched key meter_policy_id. </para>
+          </briefdescription>
+          <detaileddescription>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            sai_object_id_t </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           MANDATORY_ON_CREATE | CREATE_ONLY </para>
+</simplesect>
+<simplesect kind="par"><title>Allowed object types</title><para> @@objects         SAI_OBJECT_TYPE_METER_POLICY </para>
+</simplesect>
+<simplesect kind="par"><title>IsResourceType:</title><para> @@isresourcetype  true </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIEXPERIMENTALDASH__METER_1ggaa2952ae08959da4095727897d8f98281a48201cbb9d6b7067ccd5f0f5b5f6314e" prot="public">
+          <name>SAI_METER_RULE_ATTR_DIP</name>
+          <briefdescription>
+<para>Ternary matched key dip. </para>
+          </briefdescription>
+          <detaileddescription>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            sai_ip_address_t </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           MANDATORY_ON_CREATE | CREATE_ONLY </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIEXPERIMENTALDASH__METER_1ggaa2952ae08959da4095727897d8f98281a026374f8ba7c37377fe823cf2a465fd9" prot="public">
+          <name>SAI_METER_RULE_ATTR_DIP_MASK</name>
+          <briefdescription>
+<para>Ternary matched mask dip. </para>
+          </briefdescription>
+          <detaileddescription>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            sai_ip_address_t </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           MANDATORY_ON_CREATE | CREATE_ONLY </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIEXPERIMENTALDASH__METER_1ggaa2952ae08959da4095727897d8f98281a0ad0e91581b735b9fac1184dbf06472a" prot="public">
+          <name>SAI_METER_RULE_ATTR_METER_CLASS</name>
+          <briefdescription>
+<para>Action set_policy_meter_class parameter METER_CLASS. </para>
+          </briefdescription>
+          <detaileddescription>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            sai_uint32_t </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           CREATE_AND_SET </para>
+</simplesect>
+<simplesect kind="par"><title>Default value:</title><para> @@default         0 </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIEXPERIMENTALDASH__METER_1ggaa2952ae08959da4095727897d8f98281a26befcc50cf35e0aec461e6691e893d7" prot="public">
+          <name>SAI_METER_RULE_ATTR_PRIORITY</name>
+          <briefdescription>
+<para>Rule priority in table. </para>
+          </briefdescription>
+          <detaileddescription>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            sai_uint32_t </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           MANDATORY_ON_CREATE | CREATE_ONLY </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIEXPERIMENTALDASH__METER_1ggaa2952ae08959da4095727897d8f98281aac92ba6c8e4dce0cdd548fd740c3c6b1" prot="public">
+          <name>SAI_METER_RULE_ATTR_IP_ADDR_FAMILY</name>
+          <briefdescription>
+<para>IP address family for resource accounting. </para>
+          </briefdescription>
+          <detaileddescription>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            sai_ip_addr_family_t </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           READ_ONLY </para>
+</simplesect>
+<simplesect kind="par"><title>IsResourceType:</title><para> @@isresourcetype  true </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIEXPERIMENTALDASH__METER_1ggaa2952ae08959da4095727897d8f98281a28aa1718fb91ed650b4079b6ea8af432" prot="public">
+          <name>SAI_METER_RULE_ATTR_END</name>
+          <briefdescription>
+<para>End of attributes. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIEXPERIMENTALDASH__METER_1ggaa2952ae08959da4095727897d8f98281ae40065b013c93a52d78a93e0712c7e2f" prot="public">
+          <name>SAI_METER_RULE_ATTR_CUSTOM_RANGE_START</name>
+          <initializer>= 0x10000000</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Custom range base value </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIEXPERIMENTALDASH__METER_1ggaa2952ae08959da4095727897d8f98281ada57f26c7b2c14c3c9d7f9f049d83119" prot="public">
+          <name>SAI_METER_RULE_ATTR_CUSTOM_RANGE_END</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>End of custom range base </para>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>Attribute ID for dash_meter_meter_rule. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/bohdan/SAI_bootcamp/SAI/experimental/saiexperimentaldashmeter.h" line="127" column="1" bodyfile="/home/bohdan/SAI_bootcamp/SAI/experimental/saiexperimentaldashmeter.h" bodystart="128" bodyend="197"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="group__SAIEXPERIMENTALDASH__METER_1ga215bb32c5667f1c4a27c134d68ad63a2" prot="public" static="no">
+        <type>enum <ref refid="group__SAIEXPERIMENTALDASH__METER_1ga7b6ea3eeb45e8c2fac4784f66aa5d9c4" kindref="member">_sai_meter_bucket_attr_t</ref></type>
+        <definition>typedef enum _sai_meter_bucket_attr_t sai_meter_bucket_attr_t</definition>
+        <argsstring></argsstring>
+        <name>sai_meter_bucket_attr_t</name>
+        <briefdescription>
+<para>Attribute ID for dash_meter_meter_bucket. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/bohdan/SAI_bootcamp/SAI/experimental/saiexperimentaldashmeter.h" line="76" column="25"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__SAIEXPERIMENTALDASH__METER_1ga552081f22684f2d9d5366d4b30992b2d" prot="public" static="no">
+        <type>enum <ref refid="group__SAIEXPERIMENTALDASH__METER_1ga11097d2017d1939adb96971e3693a98e" kindref="member">_sai_meter_bucket_stat_t</ref></type>
+        <definition>typedef enum _sai_meter_bucket_stat_t sai_meter_bucket_stat_t</definition>
+        <argsstring></argsstring>
+        <name>sai_meter_bucket_stat_t</name>
+        <briefdescription>
+<para>Counter IDs for meter_bucket in sai_get_meter_bucket_stats() call. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/bohdan/SAI_bootcamp/SAI/experimental/saiexperimentaldashmeter.h" line="89" column="25"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__SAIEXPERIMENTALDASH__METER_1ga8c697f4360ee9d48d21d6afe9e20ef23" prot="public" static="no">
+        <type>enum <ref refid="group__SAIEXPERIMENTALDASH__METER_1gafe68c7fca7a6b05ef3e2127404df0c56" kindref="member">_sai_meter_policy_attr_t</ref></type>
+        <definition>typedef enum _sai_meter_policy_attr_t sai_meter_policy_attr_t</definition>
+        <argsstring></argsstring>
+        <name>sai_meter_policy_attr_t</name>
+        <briefdescription>
+<para>Attribute ID for dash_meter_meter_policy. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/bohdan/SAI_bootcamp/SAI/experimental/saiexperimentaldashmeter.h" line="122" column="25"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__SAIEXPERIMENTALDASH__METER_1gae168cc7711eaed5fa96e6fcbce175cdb" prot="public" static="no">
+        <type>enum <ref refid="group__SAIEXPERIMENTALDASH__METER_1gaa2952ae08959da4095727897d8f98281" kindref="member">_sai_meter_rule_attr_t</ref></type>
+        <definition>typedef enum _sai_meter_rule_attr_t sai_meter_rule_attr_t</definition>
+        <argsstring></argsstring>
+        <name>sai_meter_rule_attr_t</name>
+        <briefdescription>
+<para>Attribute ID for dash_meter_meter_rule. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/bohdan/SAI_bootcamp/SAI/experimental/saiexperimentaldashmeter.h" line="197" column="23"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__SAIEXPERIMENTALDASH__METER_1gab618f4e3a6547298fe6448a4c0660247" prot="public" static="no">
+        <type>sai_status_t(*</type>
+        <definition>typedef sai_status_t(* sai_create_meter_bucket_fn) (_Out_ sai_object_id_t *meter_bucket_id, _In_ sai_object_id_t switch_id, _In_ uint32_t attr_count, _In_ const sai_attribute_t *attr_list)</definition>
+        <argsstring>)(_Out_ sai_object_id_t *meter_bucket_id, _In_ sai_object_id_t switch_id, _In_ uint32_t attr_count, _In_ const sai_attribute_t *attr_list)</argsstring>
+        <name>sai_create_meter_bucket_fn</name>
+        <briefdescription>
+<para>Create dash_meter_meter_bucket. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="out">meter_bucket_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Entry id </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">switch_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Switch id </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">attr_count</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Number of attributes </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">attr_list</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Array of attributes</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="group__SAISTATUS_1gaccbc66056ee29d7f1dc8defdc314cc55" kindref="member">SAI_STATUS_SUCCESS</ref> on success Failure status code on error </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/bohdan/SAI_bootcamp/SAI/experimental/saiexperimentaldashmeter.h" line="209" column="9" bodyfile="/home/bohdan/SAI_bootcamp/SAI/experimental/saiexperimentaldashmeter.h" bodystart="209" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__SAIEXPERIMENTALDASH__METER_1ga80e0536ce549a9b5b73bf9dc4666f843" prot="public" static="no">
+        <type>sai_status_t(*</type>
+        <definition>typedef sai_status_t(* sai_remove_meter_bucket_fn) (_In_ sai_object_id_t meter_bucket_id)</definition>
+        <argsstring>)(_In_ sai_object_id_t meter_bucket_id)</argsstring>
+        <name>sai_remove_meter_bucket_fn</name>
+        <briefdescription>
+<para>Remove dash_meter_meter_bucket. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">meter_bucket_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Entry id</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="group__SAISTATUS_1gaccbc66056ee29d7f1dc8defdc314cc55" kindref="member">SAI_STATUS_SUCCESS</ref> on success Failure status code on error </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/bohdan/SAI_bootcamp/SAI/experimental/saiexperimentaldashmeter.h" line="222" column="9" bodyfile="/home/bohdan/SAI_bootcamp/SAI/experimental/saiexperimentaldashmeter.h" bodystart="222" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__SAIEXPERIMENTALDASH__METER_1gab69322ad928186ed2bb6bf876d9a657a" prot="public" static="no">
+        <type>sai_status_t(*</type>
+        <definition>typedef sai_status_t(* sai_set_meter_bucket_attribute_fn) (_In_ sai_object_id_t meter_bucket_id, _In_ const sai_attribute_t *attr)</definition>
+        <argsstring>)(_In_ sai_object_id_t meter_bucket_id, _In_ const sai_attribute_t *attr)</argsstring>
+        <name>sai_set_meter_bucket_attribute_fn</name>
+        <briefdescription>
+<para>Set attribute for dash_meter_meter_bucket. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">meter_bucket_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Entry id </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">attr</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Attribute</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="group__SAISTATUS_1gaccbc66056ee29d7f1dc8defdc314cc55" kindref="member">SAI_STATUS_SUCCESS</ref> on success Failure status code on error </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/bohdan/SAI_bootcamp/SAI/experimental/saiexperimentaldashmeter.h" line="233" column="9" bodyfile="/home/bohdan/SAI_bootcamp/SAI/experimental/saiexperimentaldashmeter.h" bodystart="233" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__SAIEXPERIMENTALDASH__METER_1gafc234bbfefcde8bb8f9597d9863db7b0" prot="public" static="no">
+        <type>sai_status_t(*</type>
+        <definition>typedef sai_status_t(* sai_get_meter_bucket_attribute_fn) (_In_ sai_object_id_t meter_bucket_id, _In_ uint32_t attr_count, _Inout_ sai_attribute_t *attr_list)</definition>
+        <argsstring>)(_In_ sai_object_id_t meter_bucket_id, _In_ uint32_t attr_count, _Inout_ sai_attribute_t *attr_list)</argsstring>
+        <name>sai_get_meter_bucket_attribute_fn</name>
+        <briefdescription>
+<para>Get attribute for dash_meter_meter_bucket. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">meter_bucket_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Entry id </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">attr_count</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Number of attributes </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="inout">attr_list</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Array of attributes</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="group__SAISTATUS_1gaccbc66056ee29d7f1dc8defdc314cc55" kindref="member">SAI_STATUS_SUCCESS</ref> on success Failure status code on error </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/bohdan/SAI_bootcamp/SAI/experimental/saiexperimentaldashmeter.h" line="246" column="9" bodyfile="/home/bohdan/SAI_bootcamp/SAI/experimental/saiexperimentaldashmeter.h" bodystart="246" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__SAIEXPERIMENTALDASH__METER_1gaf17095f0d458623ffc672e44ee6ac187" prot="public" static="no">
+        <type>sai_status_t(*</type>
+        <definition>typedef sai_status_t(* sai_get_meter_bucket_stats_fn) (_In_ sai_object_id_t meter_bucket_id, _In_ uint32_t number_of_counters, _In_ const sai_stat_id_t *counter_ids, _Out_ uint64_t *counters)</definition>
+        <argsstring>)(_In_ sai_object_id_t meter_bucket_id, _In_ uint32_t number_of_counters, _In_ const sai_stat_id_t *counter_ids, _Out_ uint64_t *counters)</argsstring>
+        <name>sai_get_meter_bucket_stats_fn</name>
+        <briefdescription>
+<para>Get meter_bucket statistics counters. Deprecated for backward compatibility. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">meter_bucket_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Entry id </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">number_of_counters</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Number of counters in the array </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">counter_ids</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Specifies the array of counter ids </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="out">counters</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Array of resulting counter values.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="group__SAISTATUS_1gaccbc66056ee29d7f1dc8defdc314cc55" kindref="member">SAI_STATUS_SUCCESS</ref> on success, failure status code on error </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/bohdan/SAI_bootcamp/SAI/experimental/saiexperimentaldashmeter.h" line="261" column="9" bodyfile="/home/bohdan/SAI_bootcamp/SAI/experimental/saiexperimentaldashmeter.h" bodystart="261" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__SAIEXPERIMENTALDASH__METER_1ga92e56b96dc768b732297bd9dce6dc4f7" prot="public" static="no">
+        <type>sai_status_t(*</type>
+        <definition>typedef sai_status_t(* sai_get_meter_bucket_stats_ext_fn) (_In_ sai_object_id_t meter_bucket_id, _In_ uint32_t number_of_counters, _In_ const sai_stat_id_t *counter_ids, _In_ sai_stats_mode_t mode, _Out_ uint64_t *counters)</definition>
+        <argsstring>)(_In_ sai_object_id_t meter_bucket_id, _In_ uint32_t number_of_counters, _In_ const sai_stat_id_t *counter_ids, _In_ sai_stats_mode_t mode, _Out_ uint64_t *counters)</argsstring>
+        <name>sai_get_meter_bucket_stats_ext_fn</name>
+        <briefdescription>
+<para>Get meter_bucket statistics counters extended. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">meter_bucket_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Entry id </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">number_of_counters</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Number of counters in the array </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">counter_ids</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Specifies the array of counter ids </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">mode</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Statistics mode </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="out">counters</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Array of resulting counter values.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="group__SAISTATUS_1gaccbc66056ee29d7f1dc8defdc314cc55" kindref="member">SAI_STATUS_SUCCESS</ref> on success, failure status code on error </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/bohdan/SAI_bootcamp/SAI/experimental/saiexperimentaldashmeter.h" line="278" column="9" bodyfile="/home/bohdan/SAI_bootcamp/SAI/experimental/saiexperimentaldashmeter.h" bodystart="278" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__SAIEXPERIMENTALDASH__METER_1ga396f982cbf61aeb3ab77455f1c03c73d" prot="public" static="no">
+        <type>sai_status_t(*</type>
+        <definition>typedef sai_status_t(* sai_clear_meter_bucket_stats_fn) (_In_ sai_object_id_t meter_bucket_id, _In_ uint32_t number_of_counters, _In_ const sai_stat_id_t *counter_ids)</definition>
+        <argsstring>)(_In_ sai_object_id_t meter_bucket_id, _In_ uint32_t number_of_counters, _In_ const sai_stat_id_t *counter_ids)</argsstring>
+        <name>sai_clear_meter_bucket_stats_fn</name>
+        <briefdescription>
+<para>Clear meter_bucket statistics counters. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">meter_bucket_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Entry id </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">number_of_counters</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Number of counters in the array </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">counter_ids</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Specifies the array of counter ids</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="group__SAISTATUS_1gaccbc66056ee29d7f1dc8defdc314cc55" kindref="member">SAI_STATUS_SUCCESS</ref> on success, failure status code on error </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/bohdan/SAI_bootcamp/SAI/experimental/saiexperimentaldashmeter.h" line="294" column="9" bodyfile="/home/bohdan/SAI_bootcamp/SAI/experimental/saiexperimentaldashmeter.h" bodystart="294" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__SAIEXPERIMENTALDASH__METER_1ga7de9618adb88ab7c45633ad9db94d3e4" prot="public" static="no">
+        <type>sai_status_t(*</type>
+        <definition>typedef sai_status_t(* sai_create_meter_policy_fn) (_Out_ sai_object_id_t *meter_policy_id, _In_ sai_object_id_t switch_id, _In_ uint32_t attr_count, _In_ const sai_attribute_t *attr_list)</definition>
+        <argsstring>)(_Out_ sai_object_id_t *meter_policy_id, _In_ sai_object_id_t switch_id, _In_ uint32_t attr_count, _In_ const sai_attribute_t *attr_list)</argsstring>
+        <name>sai_create_meter_policy_fn</name>
+        <briefdescription>
+<para>Create dash_meter_meter_policy. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="out">meter_policy_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Entry id </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">switch_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Switch id </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">attr_count</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Number of attributes </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">attr_list</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Array of attributes</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="group__SAISTATUS_1gaccbc66056ee29d7f1dc8defdc314cc55" kindref="member">SAI_STATUS_SUCCESS</ref> on success Failure status code on error </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/bohdan/SAI_bootcamp/SAI/experimental/saiexperimentaldashmeter.h" line="309" column="9" bodyfile="/home/bohdan/SAI_bootcamp/SAI/experimental/saiexperimentaldashmeter.h" bodystart="309" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__SAIEXPERIMENTALDASH__METER_1ga9b8e10d835e28006ab6ef766c5ccf5b4" prot="public" static="no">
+        <type>sai_status_t(*</type>
+        <definition>typedef sai_status_t(* sai_remove_meter_policy_fn) (_In_ sai_object_id_t meter_policy_id)</definition>
+        <argsstring>)(_In_ sai_object_id_t meter_policy_id)</argsstring>
+        <name>sai_remove_meter_policy_fn</name>
+        <briefdescription>
+<para>Remove dash_meter_meter_policy. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">meter_policy_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Entry id</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="group__SAISTATUS_1gaccbc66056ee29d7f1dc8defdc314cc55" kindref="member">SAI_STATUS_SUCCESS</ref> on success Failure status code on error </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/bohdan/SAI_bootcamp/SAI/experimental/saiexperimentaldashmeter.h" line="322" column="9" bodyfile="/home/bohdan/SAI_bootcamp/SAI/experimental/saiexperimentaldashmeter.h" bodystart="322" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__SAIEXPERIMENTALDASH__METER_1ga6883ab829d4a9e48cb13d5f07bf2c465" prot="public" static="no">
+        <type>sai_status_t(*</type>
+        <definition>typedef sai_status_t(* sai_set_meter_policy_attribute_fn) (_In_ sai_object_id_t meter_policy_id, _In_ const sai_attribute_t *attr)</definition>
+        <argsstring>)(_In_ sai_object_id_t meter_policy_id, _In_ const sai_attribute_t *attr)</argsstring>
+        <name>sai_set_meter_policy_attribute_fn</name>
+        <briefdescription>
+<para>Set attribute for dash_meter_meter_policy. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">meter_policy_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Entry id </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">attr</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Attribute</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="group__SAISTATUS_1gaccbc66056ee29d7f1dc8defdc314cc55" kindref="member">SAI_STATUS_SUCCESS</ref> on success Failure status code on error </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/bohdan/SAI_bootcamp/SAI/experimental/saiexperimentaldashmeter.h" line="333" column="9" bodyfile="/home/bohdan/SAI_bootcamp/SAI/experimental/saiexperimentaldashmeter.h" bodystart="333" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__SAIEXPERIMENTALDASH__METER_1ga20b556820c89ab1c6655fd550e74f77b" prot="public" static="no">
+        <type>sai_status_t(*</type>
+        <definition>typedef sai_status_t(* sai_get_meter_policy_attribute_fn) (_In_ sai_object_id_t meter_policy_id, _In_ uint32_t attr_count, _Inout_ sai_attribute_t *attr_list)</definition>
+        <argsstring>)(_In_ sai_object_id_t meter_policy_id, _In_ uint32_t attr_count, _Inout_ sai_attribute_t *attr_list)</argsstring>
+        <name>sai_get_meter_policy_attribute_fn</name>
+        <briefdescription>
+<para>Get attribute for dash_meter_meter_policy. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">meter_policy_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Entry id </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">attr_count</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Number of attributes </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="inout">attr_list</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Array of attributes</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="group__SAISTATUS_1gaccbc66056ee29d7f1dc8defdc314cc55" kindref="member">SAI_STATUS_SUCCESS</ref> on success Failure status code on error </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/bohdan/SAI_bootcamp/SAI/experimental/saiexperimentaldashmeter.h" line="346" column="9" bodyfile="/home/bohdan/SAI_bootcamp/SAI/experimental/saiexperimentaldashmeter.h" bodystart="346" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__SAIEXPERIMENTALDASH__METER_1gab0b927b12d7d0ccd09e047734f134cdf" prot="public" static="no">
+        <type>sai_status_t(*</type>
+        <definition>typedef sai_status_t(* sai_create_meter_rule_fn) (_Out_ sai_object_id_t *meter_rule_id, _In_ sai_object_id_t switch_id, _In_ uint32_t attr_count, _In_ const sai_attribute_t *attr_list)</definition>
+        <argsstring>)(_Out_ sai_object_id_t *meter_rule_id, _In_ sai_object_id_t switch_id, _In_ uint32_t attr_count, _In_ const sai_attribute_t *attr_list)</argsstring>
+        <name>sai_create_meter_rule_fn</name>
+        <briefdescription>
+<para>Create dash_meter_meter_rule. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="out">meter_rule_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Entry id </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">switch_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Switch id </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">attr_count</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Number of attributes </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">attr_list</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Array of attributes</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="group__SAISTATUS_1gaccbc66056ee29d7f1dc8defdc314cc55" kindref="member">SAI_STATUS_SUCCESS</ref> on success Failure status code on error </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/bohdan/SAI_bootcamp/SAI/experimental/saiexperimentaldashmeter.h" line="361" column="9" bodyfile="/home/bohdan/SAI_bootcamp/SAI/experimental/saiexperimentaldashmeter.h" bodystart="361" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__SAIEXPERIMENTALDASH__METER_1gaa6c895faac9937e42dab3984213d96a9" prot="public" static="no">
+        <type>sai_status_t(*</type>
+        <definition>typedef sai_status_t(* sai_remove_meter_rule_fn) (_In_ sai_object_id_t meter_rule_id)</definition>
+        <argsstring>)(_In_ sai_object_id_t meter_rule_id)</argsstring>
+        <name>sai_remove_meter_rule_fn</name>
+        <briefdescription>
+<para>Remove dash_meter_meter_rule. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">meter_rule_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Entry id</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="group__SAISTATUS_1gaccbc66056ee29d7f1dc8defdc314cc55" kindref="member">SAI_STATUS_SUCCESS</ref> on success Failure status code on error </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/bohdan/SAI_bootcamp/SAI/experimental/saiexperimentaldashmeter.h" line="374" column="9" bodyfile="/home/bohdan/SAI_bootcamp/SAI/experimental/saiexperimentaldashmeter.h" bodystart="374" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__SAIEXPERIMENTALDASH__METER_1ga7ef5db39d4306a6ccd52d4c5068dea51" prot="public" static="no">
+        <type>sai_status_t(*</type>
+        <definition>typedef sai_status_t(* sai_set_meter_rule_attribute_fn) (_In_ sai_object_id_t meter_rule_id, _In_ const sai_attribute_t *attr)</definition>
+        <argsstring>)(_In_ sai_object_id_t meter_rule_id, _In_ const sai_attribute_t *attr)</argsstring>
+        <name>sai_set_meter_rule_attribute_fn</name>
+        <briefdescription>
+<para>Set attribute for dash_meter_meter_rule. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">meter_rule_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Entry id </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">attr</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Attribute</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="group__SAISTATUS_1gaccbc66056ee29d7f1dc8defdc314cc55" kindref="member">SAI_STATUS_SUCCESS</ref> on success Failure status code on error </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/bohdan/SAI_bootcamp/SAI/experimental/saiexperimentaldashmeter.h" line="385" column="9" bodyfile="/home/bohdan/SAI_bootcamp/SAI/experimental/saiexperimentaldashmeter.h" bodystart="385" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__SAIEXPERIMENTALDASH__METER_1ga82da3a9a872383e60ce238b23cb88bdb" prot="public" static="no">
+        <type>sai_status_t(*</type>
+        <definition>typedef sai_status_t(* sai_get_meter_rule_attribute_fn) (_In_ sai_object_id_t meter_rule_id, _In_ uint32_t attr_count, _Inout_ sai_attribute_t *attr_list)</definition>
+        <argsstring>)(_In_ sai_object_id_t meter_rule_id, _In_ uint32_t attr_count, _Inout_ sai_attribute_t *attr_list)</argsstring>
+        <name>sai_get_meter_rule_attribute_fn</name>
+        <briefdescription>
+<para>Get attribute for dash_meter_meter_rule. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">meter_rule_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Entry id </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">attr_count</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Number of attributes </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="inout">attr_list</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Array of attributes</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="group__SAISTATUS_1gaccbc66056ee29d7f1dc8defdc314cc55" kindref="member">SAI_STATUS_SUCCESS</ref> on success Failure status code on error </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/bohdan/SAI_bootcamp/SAI/experimental/saiexperimentaldashmeter.h" line="398" column="9" bodyfile="/home/bohdan/SAI_bootcamp/SAI/experimental/saiexperimentaldashmeter.h" bodystart="398" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__SAIEXPERIMENTALDASH__METER_1ga9a6c463ac1c525c8e0d8d44e445a069d" prot="public" static="no">
+        <type>struct <ref refid="struct__sai__dash__meter__api__t" kindref="compound">_sai_dash_meter_api_t</ref></type>
+        <definition>typedef struct _sai_dash_meter_api_t sai_dash_meter_api_t</definition>
+        <argsstring></argsstring>
+        <name>sai_dash_meter_api_t</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/bohdan/SAI_bootcamp/SAI/experimental/saiexperimentaldashmeter.h" line="429" column="22"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+  </compounddef>
+</doxygen>
