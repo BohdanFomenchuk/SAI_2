@@ -9,7 +9,7 @@ make && sudo make install
 ## 2. Compile lag_test.c (2-nd Home Work) and complete_lag_ut.c (3-rd Home Work) 
 cd SAI/test/sai_ut
 gcc -o lag_unit_test -I /usr/include/sai -L /usr/lib lag_test.c -lsai
-gcc -o complete_lag_unit_test -I /usr/include/sai -L /usr/lib comlete_lag_ut.c -lsai 
+gcc -o complete_lag_unit_test -I /usr/include/sai -L /usr/lib complete_lag_ut.c -lsai 
 
 ## 3. Run tests
 ./lag_unit_test
@@ -72,11 +72,4 @@ Validate the SAI LAG API implementation against specified requirements.
 - Test Case 4.1: Attempt to add the same port to multiple LAGs (expect failure).
 - Test Case 4.2: Create LAG member with invalid LAG/PORT IDs (expect failure).
 
-### 5. Stress Testing
-- Test Case 5.1: Create, modify, and delete LAGs and LAG members under boundary conditions.
-
-## Execution
-- Execute tests in the specified order.
-- Log results and validate against expected outcomes.
-- Report any discrepancies and issues for further investigation.
 

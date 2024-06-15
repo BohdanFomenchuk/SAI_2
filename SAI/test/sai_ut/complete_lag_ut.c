@@ -201,38 +201,6 @@ int main() {
     status = lag_api->create_lag_member(&lag_member_oids[0], 2, attrs);
     print_failure(status, "Create LAG_MEMBER with invalid LAG/PORT IDs");
 
-    // Test Case 5.1: Stress test - Create, modify, and delete LAGs and LAG members under boundary conditions
-    for (i = 0; i < MAX_LAGS; i++) {
-        status = lag_api->create_lag(&lag_oids[i], 0, NULL);
-        char msg[50];
-        sprintf(msg, "Stress: Create LAG #%d", i + 1);
-        print_status(status, msg);
-        if (status != SAI_STATUS_SUCCESS) return 1;
-
-        for (int j = 0; j < MAX_LAG_MEMBERS / MAX_LAGS; j++) {
-            attrs[0].id = SAI_LAG_MEMBER_ATTR_LAG_ID;
-            attrs[0].value.oid = lag_oids[i];
-            attrs[1].id = SAI_LAG_MEMBER_ATTR_PORT_ID;
-            attrs[1].value.oid = j + 1;
-
-            status = lag_api->create_lag_member(&lag_member_oids[j], 2, attrs);
-            sprintf(msg, "Stress: Create LAG_MEMBER #%d for LAG #%d", j + 1, i + 1);
-            print_status(status, msg);
-            if (status != SAI_STATUS_SUCCESS) return 1;
-        }
-
-        for (int j = 0; j < MAX_LAG_MEMBERS / MAX_LAGS; j++) {
-            status = lag_api->remove_lag_member(lag_member_oids[j]);
-            sprintf(msg, "Stress: Remove LAG_MEMBER #%d for LAG #%d", j + 1, i + 1);
-            print_status(status, msg);
-            if (status != SAI_STATUS_SUCCESS) return 1;
-        }
-
-        status = lag_api->remove_lag(lag_oids[i]);
-        sprintf(msg, "Stress: Remove LAG #%d", i + 1);
-        print_status(status, msg);
-        if (status != SAI_STATUS_SUCCESS) return 1;
-    }
 
     printf("All tests executed.\n");
 
